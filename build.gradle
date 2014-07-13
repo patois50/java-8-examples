@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+jar {
+    baseName = 'java-8-examples'
+    version =  '0.0.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}
